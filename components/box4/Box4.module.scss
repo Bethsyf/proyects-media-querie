@@ -4,10 +4,17 @@
   width: 15rem;
   height: 15rem;
   background: gray;
-  color: gold;
+
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 1rem auto;
   padding: 1rem;
+  p {
+    color: gold;
+  }
+  img {
+    margin-bottom: 0.5rem;
+  }
 }
