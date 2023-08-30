@@ -1,12 +1,31 @@
 @import '../../styles/media.scss';
 
 .container {
+  @include media-resp(lg) {
+    display: flex;
+  }
   .containerInner {
     .laptop {
       display: none;
     }
     .special {
       display: none;
+    }
+    @include media-resp(md) {
+      .mobile {
+        display: none;
+      }
+      .laptop {
+        display: flex;
+      }
+    }
+    @include media-resp(lg) {
+      .laptop {
+        display: none;
+      }
+      .special {
+        display: flex;
+      }
     }
   }
   p {

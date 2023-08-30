@@ -11,6 +11,9 @@
   align-items: center;
   margin: 1rem auto;
   padding: 1rem;
+  @include media-resp(lg) {
+    height: 30rem;
+  }
   p {
     color: gold;
   }
