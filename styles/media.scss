@@ -1,0 +1,20 @@
+//Definicion de los breakpoints
+$breakpoints: (
+    ssm: 500px,
+    //pantalla de telefono
+    sm: 540px,
+    //pantalla de tablet (este es el unico que usaremos)
+    md: 768px,
+    lg: 992px,
+    //pantalla de laptop/desktop
+    xlg: 1024px,
+    xxlg: 1200px,
+    special: 1300px,
+);
+
+//Creacion del mixin
+@mixin media-resp($breakpoint) {
+    @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+    }
+}

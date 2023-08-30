@@ -1,0 +1,14 @@
+@import '../../styles/media.scss';
+
+.container {
+  width: 15rem;
+  height: 15rem;
+  background: blueviolet;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+  padding: 1rem;
+  font-size: 1rem;
+}

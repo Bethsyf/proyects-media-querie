@@ -1,0 +1,18 @@
+@import '../../styles/media.scss';
+
+.container {
+  .containerInner {
+    .laptop {
+      display: none;
+    }
+    .special {
+      display: none;
+    }
+  }
+  p {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: crimson;
+  }
+}
